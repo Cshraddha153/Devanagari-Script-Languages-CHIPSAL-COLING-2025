@@ -1,29 +1,42 @@
 # Shared task on Natural Language Understanding of Devanagari Script Languages at CHIPSAL@COLING 2025
 
-This is a "Shared task on Natural Language Understanding of Devanagari Script Languages" at CHIPSAL@COLING 2025 focuses on addressing 
-key challenges in processing Devanagari-scripted languages. In multilingual contexts, accurate language identification is critical,
-making the first subtask, Devanagari script Language Identification, essential for identifying whether a given text is in Devanagari
-script. Hate speech detection is another significant aspect of understanding social dynamics, especially within online spaces. Subtask B,
-Hate Speech Detection, aims to determine whether a given text contains hate speech, with annotated datasets marking the presence or 
-absence of such content. Building on this, Subtask C, Targets of Hate Speech Identification, focuses on identifying specific targets of 
-hate speech, such as individuals, organizations, or communities. This shared task facilitates comprehensive Devanagari script language understanding,
-targeting key challenges in script identification, hate speech detection, and the identification of hate speech targets. 
+This repository contains the code and models used for the Shared Task on Natural Language Understanding of Devanagari Script Languages at CHIPSAL@COLING 2025. The task addresses key challenges in processing Devanagari-scripted languages, focusing on language identification, hate speech detection, and target identification.
 
 
 # Subtask A: Devanagari Script Language Identification
-Given a sentence in Devanagari script, the goal is to determine the language it belongs to among Nepali, Marathi, Sanskrit, 
-Bhojpuri, and Hindi. This task addresses the critical need for accurate language identification in multilingual contexts.
 
+Objective: Classify a given sentence written in Devanagari script into one of five languages: Nepali, Marathi, Sanskrit, Bhojpuri, or Hindi.
+Importance: Accurate language identification is crucial in multilingual settings, enabling downstream NLP tasks.
 
 # Subtask B: Hate Speech Detection in Devanagari Script Language
-Participants are required to identify whether a given sentence contains hate speech. The dataset consists of monolingual 
-sentences in Nepali and Hindi, emphasizing the need for effective detection across languages within the Devanagari script.
 
+Objective: Detect whether a given monolingual sentence (in Nepali or Hindi) contains hate speech.
+Dataset: Annotated corpus with binary labels (hate speech vs. non-hate speech).
+Significance: Effective hate speech detection helps in monitoring and moderating harmful content online.
 
 # Subtask C: Target Identification for Hate Speech in Devanagari Script Language
-For this subtask, given a hateful sentence in Devanagari script, the objective is to identify the target of the hate speech,
-categorized as either "individual," "organization," or "community." This task is essential for understanding the specific 
-nature and direction of hate speech.
 
+Objective: Given a hateful sentence in Devanagari script, classify the target of the hate speech as:
+ 1. Individual
+ 2. Organization
+ 3. Community
+Relevance: Understanding the specific targets of hate speech is essential for content moderation and policy-making.
 
+#  Models Used
 
+We experimented with various transformer-based models and an ensemble approach:
+
+ 1. Google-MuRIL
+ 2. LaBSE
+ 3. XLM-RoBERTa-base
+ 4. mBERT
+ 5. Distil-mBERT
+ 6. Ensemble Model (Majority Voting across models)
+
+# Research Paper
+
+For more details on the methodology, dataset, and results, refer to our paper:
+
+[shraddha_chipsal_2025.pdf](https://github.com/user-attachments/files/18627505/shraddha_chipsal_2025.pdf)
+
+**Link**: https://aclanthology.org/2025.chipsal-1.32/
