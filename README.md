@@ -35,6 +35,25 @@ We experimented with various transformer-based models and an ensemble approach:
 
 # Research Paper
 
-For more details on the methodology, dataset, and results, refer to our paper:
+**citation :**
+@inproceedings{chauhan-kumar-2025-dslnlp,
+    title = "{DSLNLP}@{NLU} of {D}evanagari Script Languages 2025: Leveraging {BERT}-based Architectures for Language Identification, Hate Speech Detection and Target Classification",
+    author = "Chauhan, Shraddha  and
+      Kumar, Abhinav",
+    editor = "Sarveswaran, Kengatharaiyer  and
+      Vaidya, Ashwini  and
+      Krishna Bal, Bal  and
+      Shams, Sana  and
+      Thapa, Surendrabikram",
+    booktitle = "Proceedings of the First Workshop on Challenges in Processing South Asian Languages (CHiPSAL 2025)",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2025.chipsal-1.32/",
+    pages = "289--294",
+    abstract = "The rapid rise of social media has emphasized the spread of harmful and hateful content, making it challenging for its identification. Contextual semantics is very important as prior studies present that context level semantics is a more trustworthy indicator of hatefulness than word level semantics for detecting hate speech. This paper attempts to check the usability of transformer-based models for the identification of hate speech on code-mixed datasets, which includes Google-MuRIL, LaBSE, XLMRoberta-base, mbert and distil-mbert. The above is largely due to its ability for high-level representations of complex and context-dense meaning. Besides this, we experiment on ensemble approach that covers all of the above models to reach out for an even higher level of performance in detection. The experiment results show the best performing macro F1-scores are reported in case of MuRIL in comparison to other implemented models."
+}
 
-**Paper Link**: https://aclanthology.org/2025.chipsal-1.32/
+For more details on the methodology, dataset, and results, refer to our paper:
+**Paper Link :** https://aclanthology.org/2025.chipsal-1.32/
