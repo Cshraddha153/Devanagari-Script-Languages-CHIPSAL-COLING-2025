@@ -37,6 +37,4 @@ We experimented with various transformer-based models and an ensemble approach:
 
 For more details on the methodology, dataset, and results, refer to our paper:
 
-**PDF**: [shraddha_chipsal_2025.pdf](https://github.com/user-attachments/files/18627505/shraddha_chipsal_2025.pdf)
-
-**Link**: https://aclanthology.org/2025.chipsal-1.32/
+**Paper Link**: https://aclanthology.org/2025.chipsal-1.32/
